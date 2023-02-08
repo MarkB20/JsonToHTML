@@ -1,0 +1,33 @@
+import os
+import unittest
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from src.converter import converter
+
+from deleteTest import deleteTest
+
+Input = os.path.expanduser("~/testFile")
+Output = os.path.expanduser("~/outputTestFile")
+
+
+class TestStringMethods(unittest.TestCase):
+
+    def test_coverter(self):
+        # run the converter with a test file and test output file
+        converter(Input, Output)
+        # opens the local html file in the firefox browser
+        browser = webdriver.Firefox()
+        browser.get(r'file:///Users/mbutler/outputTestFile/test.html')
+        # try to find the word apple in the output of the json file
+        apple = browser.find_element(By.CSS_SELECTOR, "body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2)")
+        # asserts if the word apple is found
+        self.assertEqual(apple.text, "Apple")
+        browser.quit()
+        # delete output contents
+        path_to_folder = "//Users/mbutler/outputTestFile"
+        deleteTest(path_to_folder)
+
+
+
+

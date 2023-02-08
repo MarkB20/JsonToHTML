@@ -1,0 +1,109 @@
+1675854979789	geckodriver	INFO	Listening on 127.0.0.1:63993
+1675854979793	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63994" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileGj1Ing"
+1   HIToolbox                           0x0000000192e885c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x0000000192e88188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x0000000192e2b310 SetMenuBarObscured + 372
+4   HIToolbox                           0x0000000192e2aee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x0000000192e24fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x0000000192debcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x0000000192e2496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x0000000192e13c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x0000000192e13b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x000000018c9b9838 _DPSNextEvent + 632
+11  AppKit                              0x000000018c9b89c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000112306d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000112308080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001115af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001115b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001111d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001118dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001118dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000112989d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000112985c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011298b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000112d33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x00002859f7370fd8 0x0 + 44366864781272
+24  ???                                 0x00002859f73829d4 0x0 + 44366864853460
+25  ???                                 0x00002859f73707b0 0x0 + 44366864779184
+26  XUL                                 0x0000000112d14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011297fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011298b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000112a2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000112989d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000112985c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011298b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001129e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001118d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001115c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001111d00b0 SharedStub + 64
+37  XUL                                 0x00000001166021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000112932fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001165fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001165fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000100833034 firefox-bin + 28724
+42  dyld                                0x000000018932be50 start + 2544
+1675854980104	Marionette	INFO	Marionette enabled
+1675854980236	Marionette	INFO	Listening on port 63997
+WebDriver BiDi listening on ws://127.0.0.1:63994
+Read port: 63997
+1675854980407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileGj1Ing/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63994/devtools/browser/83e4da4c-8e85-4421-a76c-e2544d6e2f5b
+1675854981141	Marionette	INFO	Stopped listening on port 63997
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
+1675855011609	geckodriver	INFO	Listening on 127.0.0.1:64014
+1675855011613	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64015" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilenzc9Uj"
+1   HIToolbox                           0x0000000192e885c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x0000000192e88188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x0000000192e2b310 SetMenuBarObscured + 372
+4   HIToolbox                           0x0000000192e2aee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x0000000192e24fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x0000000192debcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x0000000192e2496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x0000000192e13c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x0000000192e13b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x000000018c9b9838 _DPSNextEvent + 632
+11  AppKit                              0x000000018c9b89c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000112806d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000112808080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x0000000111aaf82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x0000000111ab4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001116d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x0000000111ddc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x0000000111ddddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000112e89d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000112e85c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x0000000112e8b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000113233b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x0000275d6a6b8fd8 0x0 + 43282170875864
+24  ???                                 0x0000275d6a6da9d4 0x0 + 43282171013588
+25  ???                                 0x0000275d6a6b87b0 0x0 + 43282170873776
+26  XUL                                 0x0000000113214f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x0000000112e7fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x0000000112e8b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000112f2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000112e89d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000112e85c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x0000000112e8b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x0000000112ee5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x0000000111dd741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x0000000111ac6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001116d00b0 SharedStub + 64
+37  XUL                                 0x0000000116b021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000112e32fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x0000000116afd950 workerlz4_decompress + 892404
+40  XUL                                 0x0000000116afdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000100cb3034 firefox-bin + 28724
+42  dyld                                0x000000018932be50 start + 2544
+1675855011903	Marionette	INFO	Marionette enabled
+1675855012038	Marionette	INFO	Listening on port 64018
+WebDriver BiDi listening on ws://127.0.0.1:64015
+Read port: 64018
+1675855012215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilenzc9Uj/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64015/devtools/browser/a4daa874-2411-4e79-a07d-05445e9aeda6
+1675855012950	Marionette	INFO	Stopped listening on port 64018
