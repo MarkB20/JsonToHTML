@@ -12,8 +12,9 @@ def converter(input, output):
     for file in os.listdir(input):
         # only allowing files that are json files to be read
         var = os.path.getsize(input) > 0
-        if not file.startswith('.') and os.path.isfile(os.path.join(input, file)) and var == True:
-            jsonFilePath = os.path.expanduser(f"{input}/{file}")
+        jsonFilePath = os.path.expanduser(f"{input}/{file}")
+        # if the file is not a json file or is not empty
+        if not file.startswith('.') and os.path.isfile(os.path.join(input, file)) and os.stat(jsonFilePath).st_size != 0:
             with open(jsonFilePath) as f:
                 loader = json.load(f)
                 # covets the html file and sorts it into the var
@@ -24,4 +25,4 @@ def converter(input, output):
             with open(HTMLFilePath, 'w') as htmlFile:
                 htmlFile.write(str(convertedJson))  # writes the converted json to the output file
                 print("json converted")
-# TODO! if the json is empty
+
