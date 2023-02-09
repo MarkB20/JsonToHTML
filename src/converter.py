@@ -1,6 +1,6 @@
 import json
 import os
-
+from src.beautifulsoup import bs
 from json2html import *
 
 
@@ -11,7 +11,6 @@ def converter(input, output):
     # goes through each file in the folder
     for file in os.listdir(input):
         # only allowing files that are json files to be read
-        var = os.path.getsize(input) > 0
         jsonFilePath = os.path.expanduser(f"{input}/{file}")
         # if the file is not a json file or is not empty
         if not file.startswith('.') and os.path.isfile(os.path.join(input, file)) and os.stat(jsonFilePath).st_size != 0:
@@ -25,4 +24,5 @@ def converter(input, output):
             with open(HTMLFilePath, 'w') as htmlFile:
                 htmlFile.write(str(convertedJson))  # writes the converted json to the output file
                 print("json converted")
+                #bs(HTMLFilePath)
 

@@ -2,21 +2,21 @@ import os
 import shutil
 
 
-def deleteTest(path_to_folder):
-    list_dir = os.listdir(path_to_folder)
-
+def deleteTest(pathToFolder):
+    list_dir = os.listdir(pathToFolder)
+    # go through each file and deletes it
     for filename in list_dir:
 
-        file_path = os.path.join(path_to_folder, filename)
+        filePath = os.path.join(pathToFolder, filename)
 
-        if os.path.isfile(file_path) or os.path.islink(file_path):
+        if os.path.isfile(filePath) or os.path.islink(filePath):
 
-            print("deleting file:", file_path)
+            print("deleting file:", filePath)
 
-            os.unlink(file_path)
+            os.unlink(filePath)
 
-        elif os.path.isdir(file_path):
+        elif os.path.isdir(filePath):
 
-            print("deleting folder:", file_path)
+            print("deleting folder:", filePath)
 
-            shutil.rmtree(file_path)
+            shutil.rmtree(filePath)
