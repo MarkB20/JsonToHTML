@@ -4,7 +4,6 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from src.converter import converter
-from src.beautifulsoup import bs
 
 from deleteTest import deleteTest
 

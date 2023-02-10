@@ -1,6 +1,5 @@
 import json
 import os
-from src.beautifulsoup import bs
 from json2html import *
 
 

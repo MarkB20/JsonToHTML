@@ -2157,3 +2157,17 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:55605/devtools/browser/3d0b81df-c406-4d88-9714-3322c7c872ee
 1675963687050	Marionette	INFO	Stopped listening on port 55608
 console.error: (new Error("IndexedDB: main/query-stripping list() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+1676022354120	Marionette	INFO	Stopped listening on port 55070
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1676022355815	Marionette	INFO	Stopped listening on port 55130
+1676022357309	Marionette	INFO	Stopped listening on port 55166
+1676022358928	Marionette	INFO	Stopped listening on port 55273
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1676022360590	Marionette	INFO	Stopped listening on port 55345
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1676022362136	Marionette	INFO	Stopped listening on port 55419
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1676022363930	Marionette	INFO	Stopped listening on port 55459
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1676022365351	Marionette	INFO	Stopped listening on port 55522
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
