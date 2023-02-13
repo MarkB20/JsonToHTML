@@ -3,6 +3,8 @@ import unittest
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
+from src.beautifulsoup import bs
 from src.converter import converter
 
 from deleteTest import deleteTest
@@ -25,6 +27,10 @@ class TestStringMethods(unittest.TestCase):
         # asserts if the word apple is found
         self.assertEqual(apple.text, "Apple")
         browser.quit()
-
+        #bs(Output+"/test.html")
         # delete output contents
+
         deleteTest(Output)
+        with open(f'{Output}/dummy.csv', 'w') as creating_new_csv_file:
+            pass
+        print("Empty File Created Successfully")
