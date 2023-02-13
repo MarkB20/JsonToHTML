@@ -22,6 +22,7 @@ def converter(input, output):
                 # storing the path to the output path to store below
                 HTMLFilePath = os.path.expanduser(f"{output}/{file.replace('.json', '')}.html")
             # opens the output file from the var above
+            convertedJson = bs(convertedJson)
             with open(HTMLFilePath, 'w') as htmlFile:
                 htmlFile.write(str(convertedJson))  # writes the converted json to the output file
                 print("json converted")
