@@ -11,7 +11,7 @@ from src.converter import converter
 
 from deleteTest import deleteTest
 
-
+import config
 Input = os.path.dirname(__file__) + "/testFile"
 Output = os.path.dirname(__file__) + "/outputTestFile"
 cl_path = exists(os.path.expanduser(f'~//Documents/devops-automation/change_lists'))
@@ -41,6 +41,7 @@ class TestStringMethods(unittest.TestCase):
         # asserts if the word apple is found
         self.assertEqual(apple.text, "Apple")
         browser.quit()
+
         # delete output contents
 
         deleteTest(Output)

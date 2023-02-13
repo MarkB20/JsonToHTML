@@ -6707,29 +6707,3 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-1676305686981	geckodriver	INFO	Listening on 127.0.0.1:57415
-1676305687486	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57416" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofileML2tK7"
-1676305687809	Marionette	INFO	Marionette enabled
-1676305687947	Marionette	INFO	Listening on port 57423
-Read port: 57423
-WebDriver BiDi listening on ws://127.0.0.1:57416
-1676305688023	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofileML2tK7/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:57416/devtools/browser/8d5f813d-571c-4c5f-b8fa-f533c9d86bab
-1676305689113	Marionette	INFO	Stopped listening on port 57423
-console.error: (new StorageError("Storage error: AbortError: IndexedDB: main/query-stripping list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsClient.jsm", 162))
-1676305770186	geckodriver	INFO	Listening on 127.0.0.1:57548
-1676305770690	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "57549" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofileN9sZoy"
-1676305771037	Marionette	INFO	Marionette enabled
-1676305771089	Marionette	INFO	Listening on port 57556
-Read port: 57556
-WebDriver BiDi listening on ws://127.0.0.1:57549
-1676305771233	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofileN9sZoy/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:57549/devtools/browser/000f98ff-d82d-4344-b666-61a7b97360ea
-1676305772250	Marionette	INFO	Stopped listening on port 57556
-console.error: services.settings: 
-  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
-console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
