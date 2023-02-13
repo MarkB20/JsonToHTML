@@ -7013,3 +7013,41 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1676308014492	geckodriver	INFO	Listening on 127.0.0.1:61062
+1676308014997	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61063" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofiletra4MX"
+1676308015340	Marionette	INFO	Marionette enabled
+1676308015393	Marionette	INFO	Listening on port 61070
+Read port: 61070
+WebDriver BiDi listening on ws://127.0.0.1:61063
+1676308015539	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofiletra4MX/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61063/devtools/browser/c3296d8a-750b-4fe7-95dc-96b68b8cc8f4
+1676308016489	Marionette	INFO	Stopped listening on port 61070
+console.error: (new Error("IndexedDB: main/query-stripping list() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+1676308250003	geckodriver	INFO	Listening on 127.0.0.1:61430
+1676308250512	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61431" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofile2nMXKs"
+1676308250850	Marionette	INFO	Marionette enabled
+1676308250991	Marionette	INFO	Listening on port 61439
+Read port: 61439
+WebDriver BiDi listening on ws://127.0.0.1:61431
+1676308251067	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofile2nMXKs/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61431/devtools/browser/3b0b7786-69fd-41e8-8681-0ff57c3822ed
+1676308252142	Marionette	INFO	Stopped listening on port 61439
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+1676308264865	geckodriver	INFO	Listening on 127.0.0.1:61468
+1676308264871	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61469" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofilevPx54i"
+1676308265176	Marionette	INFO	Marionette enabled
+1676308265231	Marionette	INFO	Listening on port 61474
+Read port: 61474
+WebDriver BiDi listening on ws://127.0.0.1:61469
+1676308265405	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/5v/6jk_4nj15xz20hfgdyv49hsw0000gp/T/rust_mozprofilevPx54i/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61469/devtools/browser/fe1b1efe-ab46-4787-a5af-1c380fbd65f8
+1676308266313	Marionette	INFO	Stopped listening on port 61474
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))

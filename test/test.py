@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from src.beautifulsoup import bs
 from src.converter import converter
+from src.copyStyle import copyStyle
 from deleteTest import deleteTest
 import config
 
@@ -14,20 +15,19 @@ Output = os.path.dirname(__file__) + "/outputTestFile"
 
 cl_path = exists(config.Input)
 htmlr_path = exists(config.Output)
+stylesheet = os.path.dirname(__file__) + "/outputTestFile/stylesheet.css"
 
 
 class TestStringMethods(unittest.TestCase):
 
-    if cl_path:
-        print("file path change_logs exists")
-    else:
-        print("Error no file path change_logs exists")
-        exit(0)
-    if htmlr_path:
-        print("file path html_reports exists")
-    else:
-        print("Error no file path html_reports exists")
-        exit(0)
+    def stylesheet_exists(self):
+        self.assertEquals((str(cl_path), cl_path.is_file()), (str(cl_path), True))
+        self.assertEquals((str(htmlr_path), htmlr_path.is_file()), (str(htmlr_path), True))
+
+    def stylesheet_exists(self):
+        copyStyle(Output)
+        self.assertEquals((str(stylesheet), stylesheet.is_file()), (str(stylesheet), True))
+        deleteTest(Output)
 
     def test_coverter(self):
         # run the converter with a test file and test output file
