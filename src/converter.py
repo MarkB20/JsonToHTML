@@ -1,7 +1,8 @@
 import json
 import os
-from src.beautifulsoup import bs
 from json2html import *
+
+from src.beautifulsoup import bs
 
 
 # sets the folder dir holding the json as a var
@@ -24,5 +25,5 @@ def converter(input, output):
             with open(HTMLFilePath, 'w') as htmlFile:
                 htmlFile.write(str(convertedJson))  # writes the converted json to the output file
                 print("json converted")
-                #bs(HTMLFilePath)
+
 
