@@ -1,21 +1,33 @@
 import io
 import os
 import unittest
-
+from os.path import exists
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
 from src.beautifulsoup import bs
 from src.converter import converter
-
 from deleteTest import deleteTest
-
 import config
+
 Input = os.path.dirname(__file__) + "/testFile"
 Output = os.path.dirname(__file__) + "/outputTestFile"
 
+cl_path = exists(config.Input)
+htmlr_path = exists(config.Output)
+
 
 class TestStringMethods(unittest.TestCase):
+
+    if cl_path:
+        print("file path change_logs exists")
+    else:
+        print("Error no file path change_logs exists")
+        exit(0)
+    if htmlr_path:
+        print("file path html_reports exists")
+    else:
+        print("Error no file path html_reports exists")
+        exit(0)
 
     def test_coverter(self):
         # run the converter with a test file and test output file
@@ -28,7 +40,6 @@ class TestStringMethods(unittest.TestCase):
         # asserts if the word apple is found
         self.assertEqual(apple.text, "Apple")
         browser.quit()
-        bs(Output+"/test.html")
         # delete output contents
 
         deleteTest(Output)
