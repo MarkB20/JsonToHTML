@@ -1,7 +1,7 @@
 import os
 
 import bs4  # BeautifulSoup 3 has been replaced
-# TODO! covert function to return output
+
 # TODO! find the best way to style the tables in the style sheet
 import bs4  # BeautifulSoup 3 has been replaced
 
