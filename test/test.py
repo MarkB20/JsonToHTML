@@ -20,7 +20,7 @@ stylesheet = os.path.dirname(__file__) + "/outputTestFile/stylesheet.css"
 
 class TestStringMethods(unittest.TestCase):
 
-    def stylesheet_exists(self):
+    def FilePath_exists(self):
         self.assertEquals((str(cl_path), cl_path.is_file()), (str(cl_path), True))
         self.assertEquals((str(htmlr_path), htmlr_path.is_file()), (str(htmlr_path), True))
 
@@ -28,6 +28,8 @@ class TestStringMethods(unittest.TestCase):
         copyStyle(Output)
         self.assertEquals((str(stylesheet), stylesheet.is_file()), (str(stylesheet), True))
         deleteTest(Output)
+
+
 
     def test_coverter(self):
         # run the converter with a test file and test output file
@@ -43,4 +45,14 @@ class TestStringMethods(unittest.TestCase):
         # delete output contents
 
         deleteTest(Output)
+
+    def test_soup(self):
+        converter(Input, Output)
+        browser = webdriver.Firefox()
+        browser.get(r"file://" + Output + "/test.html")
+        link = browser.find_element(By.CSS_SELECTOR, "head>link:nth-child(1)")
+        self.assertEqual('link', link.tag_name)
+        browser.quit()
+        deleteTest(Output)
+
 
