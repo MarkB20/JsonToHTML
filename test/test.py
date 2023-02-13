@@ -28,7 +28,7 @@ class TestStringMethods(unittest.TestCase):
         # asserts if the word apple is found
         self.assertEqual(apple.text, "Apple")
         browser.quit()
-
+        bs(Output+"/test.html")
         # delete output contents
 
         deleteTest(Output)
