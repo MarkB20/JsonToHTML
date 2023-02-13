@@ -1,3 +1,4 @@
+import io
 import os
 import unittest
 
@@ -31,6 +32,7 @@ class TestStringMethods(unittest.TestCase):
         # delete output contents
 
         deleteTest(Output)
-        with open(f'{Output}/dummy.csv', 'w') as creating_new_csv_file:
-            pass
-        print("Empty File Created Successfully")
+        fake_file = "fake file for github"
+
+        with open(f'{Output}/dummy.txt', 'w') as f:
+            f.write(fake_file)

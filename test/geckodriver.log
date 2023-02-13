@@ -4307,3 +4307,843 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1676283272648	geckodriver	INFO	Listening on 127.0.0.1:63713
+1676283273154	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63714" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileWXwOBx"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000113c06d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000113c08080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x0000000112eaf82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x0000000112eb4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x0000000112ad0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001131dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001131dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000114289d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000114285c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011428b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000114633b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x000011e60d2bcfd8 0x0 + 19679761125336
+24  ???                                 0x000011e60d2ce9d4 0x0 + 19679761197524
+25  ???                                 0x000011e60d2bc7b0 0x0 + 19679761123248
+26  XUL                                 0x0000000114614f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011427fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011428b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011432750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000114289d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000114285c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011428b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001142e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001131d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x0000000112ec6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x0000000112ad00b0 SharedStub + 64
+37  XUL                                 0x0000000117f021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000114232fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x0000000117efd950 workerlz4_decompress + 892404
+40  XUL                                 0x0000000117efdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x00000001020eb034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283273451	Marionette	INFO	Marionette enabled
+1676283273492	Marionette	INFO	Listening on port 63719
+Read port: 63719
+WebDriver BiDi listening on ws://127.0.0.1:63714
+1676283273594	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileWXwOBx/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63714/devtools/browser/18c7c085-11f3-445b-af71-d8eb82c2464b
+1676283274301	Marionette	INFO	Stopped listening on port 63719
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 230))
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 416))
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1676283294200	geckodriver	INFO	Listening on 127.0.0.1:63734
+1676283294707	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63735" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileE16D32"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000115f06d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000115f08080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001151af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001151b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x0000000114dd0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001154dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001154dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000116589d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000116585c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011658b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000116933b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x0000008b74154fd8 0x0 + 598948007896
+24  ???                                 0x0000008b741769d4 0x0 + 598948145620
+25  ???                                 0x0000008b741547b0 0x0 + 598948005808
+26  XUL                                 0x0000000116914f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011657fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011658b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011662750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000116589d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000116585c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011658b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001165e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001154d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001151c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x0000000114dd00b0 SharedStub + 64
+37  XUL                                 0x000000011a2021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000116532fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x000000011a1fd950 workerlz4_decompress + 892404
+40  XUL                                 0x000000011a1fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x00000001043ff034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283294983	Marionette	INFO	Marionette enabled
+1676283295117	Marionette	INFO	Listening on port 63740
+Read port: 63740
+WebDriver BiDi listening on ws://127.0.0.1:63735
+1676283295178	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileE16D32/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63735/devtools/browser/445ce5b4-202e-484e-afe1-4ab27ca77296
+1676283296011	Marionette	INFO	Stopped listening on port 63740
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
+console.warn: SearchService: "Could not load engine amazon@search.mozilla.org: TypeError: policy is null"
+console.error: SearchService: "maybeReloadEngines failed" (new Error("Unable to arm timer, the object has been finalized.", "resource://gre/modules/DeferredTask.sys.mjs", 221))
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: (new RemoteSettingsWorkerError("Error: Can't import when we've started shutting down.", "resource://services-settings/RemoteSettingsWorker.jsm", 48))
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1676283421011	geckodriver	INFO	Listening on 127.0.0.1:63758
+1676283421015	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63759" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofile8G4dPB"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000112006d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000112008080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001112af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001112b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x0000000110ed0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001115dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001115dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000112689d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000112685c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011268b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000112a33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x000031ca4e260fd8 0x0 + 54744964272088
+24  ???                                 0x000031ca4e2829d4 0x0 + 54744964409812
+25  ???                                 0x000031ca4e2607b0 0x0 + 54744964270000
+26  XUL                                 0x0000000112a14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011267fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011268b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011272750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000112689d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000112685c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011268b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001126e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001115d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001112c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x0000000110ed00b0 SharedStub + 64
+37  XUL                                 0x00000001163021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000112632fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001162fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001162fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000100557034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283421285	Marionette	INFO	Marionette enabled
+1676283421419	Marionette	INFO	Listening on port 63762
+Read port: 63762
+WebDriver BiDi listening on ws://127.0.0.1:63759
+1676283421488	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofile8G4dPB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63759/devtools/browser/0e35194f-a56b-4269-9e29-8f14851bf322
+1676283422329	Marionette	INFO	Stopped listening on port 63762
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/doh-providers list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.jsm", 18))
+console.error: (new Error("IndexedDB: main/doh-config getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1676283450630	geckodriver	INFO	Listening on 127.0.0.1:63777
+1676283451137	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "63778" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileezcpCq"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000114606d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000114608080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001138af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001138b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001134d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x0000000113bdc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x0000000113bdddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000114c89d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000114c85c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x0000000114c8b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000115033b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x000037f10acc8fd8 0x0 + 61508407824344
+24  ???                                 0x000037f10acda9d4 0x0 + 61508407896532
+25  ???                                 0x000037f10acc87b0 0x0 + 61508407822256
+26  XUL                                 0x0000000115014f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x0000000114c7fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x0000000114c8b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000114d2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000114c89d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000114c85c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x0000000114c8b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x0000000114ce5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x0000000113bd741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001138c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001134d00b0 SharedStub + 64
+37  XUL                                 0x00000001189021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000114c32fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001188fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001188fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000102b0f034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283451400	Marionette	INFO	Marionette enabled
+1676283451535	Marionette	INFO	Listening on port 63783
+Read port: 63783
+WebDriver BiDi listening on ws://127.0.0.1:63778
+1676283451600	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileezcpCq/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63778/devtools/browser/1ac31671-aaa7-4fc9-9b4e-39d53eae33af
+1676283452473	Marionette	INFO	Stopped listening on port 63783
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
+1676283631060	geckodriver	INFO	Listening on 127.0.0.1:64186
+1676283631063	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64187" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilevkAbH1"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000115c06d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000115c08080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x0000000114eaf82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x0000000114eb4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x0000000114ad0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001151dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001151dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000116289d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000116285c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011628b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000116633b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x00003a4f55a28fd8 0x0 + 64112413544408
+24  ???                                 0x00003a4f55a3a9d4 0x0 + 64112413616596
+25  ???                                 0x00003a4f55a287b0 0x0 + 64112413542320
+26  XUL                                 0x0000000116614f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011627fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011628b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011632750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000116289d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000116285c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011628b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001162e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001151d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x0000000114ec6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x0000000114ad00b0 SharedStub + 64
+37  XUL                                 0x0000000119f021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000116232fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x0000000119efd950 workerlz4_decompress + 892404
+40  XUL                                 0x0000000119efdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000104187034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283631329	Marionette	INFO	Marionette enabled
+1676283631461	Marionette	INFO	Listening on port 64190
+Read port: 64190
+WebDriver BiDi listening on ws://127.0.0.1:64187
+1676283631526	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilevkAbH1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64187/devtools/browser/c47fc613-c5f8-4c3a-ba73-59211a1f5faf
+1676283632353	Marionette	INFO	Stopped listening on port 64190
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.jsm", 230))
+console.error: (new RemoteSettingsWorkerError("Remote Settings has shut down.", "resource://services-settings/RemoteSettingsWorker.jsm", 48))
+console.error: (new Error("IndexedDB: main/doh-config getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1676283651691	geckodriver	INFO	Listening on 127.0.0.1:64206
+1676283651694	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64207" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilen0aTRh"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000114106d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000114108080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001133af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001133b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x0000000112fd0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001136dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001136dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000114789d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000114785c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011478b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000114b33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x000005f40b2ccfd8 0x0 + 6545717645272
+24  ???                                 0x000005f40b2ee9d4 0x0 + 6545717782996
+25  ???                                 0x000005f40b2cc7b0 0x0 + 6545717643184
+26  XUL                                 0x0000000114b14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011477fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011478b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011482750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000114789d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000114785c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011478b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001147e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001136d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001133c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x0000000112fd00b0 SharedStub + 64
+37  XUL                                 0x00000001184021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000114732fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001183fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001183fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x000000010267b034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283651959	Marionette	INFO	Marionette enabled
+1676283652092	Marionette	INFO	Listening on port 64210
+Read port: 64210
+WebDriver BiDi listening on ws://127.0.0.1:64207
+1676283652157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilen0aTRh/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64207/devtools/browser/bd52fafc-4346-4b55-96af-4217c7b5cf04
+1676283653033	Marionette	INFO	Stopped listening on port 64210
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
+1676283666294	geckodriver	INFO	Listening on 127.0.0.1:64227
+1676283666303	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "64228" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileQVY4pw"
+1   HIToolbox                           0x000000018ac385c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x000000018ac38188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x000000018abdb310 SetMenuBarObscured + 372
+4   HIToolbox                           0x000000018abdaee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x000000018abd4fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x000000018ab9bcd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x000000018abd496c AcquireEventFromQueue + 432
+8   HIToolbox                           0x000000018abc3c84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x000000018abc3b2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x0000000184769838 _DPSNextEvent + 632
+11  AppKit                              0x00000001847689c8 -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000116206d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000116208080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001154af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001154b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001150d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001157dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001157dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000116889d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000116885c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011688b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000116c33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x000031bb317c8fd8 0x0 + 54680058892248
+24  ???                                 0x000031bb317da9d4 0x0 + 54680058964436
+25  ???                                 0x000031bb317c87b0 0x0 + 54680058890160
+26  XUL                                 0x0000000116c14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011687fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011688b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011692750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000116889d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000116885c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011688b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001168e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001157d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001154c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001150d00b0 SharedStub + 64
+37  XUL                                 0x000000011a5021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000116832fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x000000011a4fd950 workerlz4_decompress + 892404
+40  XUL                                 0x000000011a4fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x00000001046ff034 firefox-bin + 28724
+42  dyld                                0x00000001810dbe50 start + 2544
+1676283666568	Marionette	INFO	Marionette enabled
+1676283666701	Marionette	INFO	Listening on port 64231
+Read port: 64231
+WebDriver BiDi listening on ws://127.0.0.1:64228
+1676283666765	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileQVY4pw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:64228/devtools/browser/802cabf9-b414-4ea1-aef8-0b7bc3858266
+1676283667630	Marionette	INFO	Stopped listening on port 64231
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
