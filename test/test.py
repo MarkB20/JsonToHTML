@@ -10,7 +10,7 @@ from src.converter import converter
 
 from deleteTest import deleteTest
 
-
+import config
 Input = os.path.dirname(__file__) + "/testFile"
 Output = os.path.dirname(__file__) + "/outputTestFile"
 
@@ -28,7 +28,7 @@ class TestStringMethods(unittest.TestCase):
         # asserts if the word apple is found
         self.assertEqual(apple.text, "Apple")
         browser.quit()
-        bs(Output+"/test.html")
+
         # delete output contents
 
         deleteTest(Output)
