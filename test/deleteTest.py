@@ -16,12 +16,6 @@ def deleteTest(pathToFolder):
 
             os.unlink(filePath)
 
-        elif os.path.isdir(filePath):
-
-            print("deleting folder:", filePath)
-
-            shutil.rmtree(filePath)
-
     fake_file = "fake file for github"
     with open(f'{pathToFolder}/dummy.txt', 'w') as f:
         f.write(fake_file)
