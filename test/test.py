@@ -41,18 +41,24 @@ class TestStringMethods(unittest.TestCase):
         apple = browser.find_element(By.CSS_SELECTOR,"body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2)")
         # asserts if the word apple is found
         self.assertEqual(apple.text, "Apple")
+        # quits the browser
         browser.quit()
         # delete output contents
-
         deleteTest(Output)
 
     def test_soup(self):
+        # run the converter with a test file and test output file
         converter(Input, Output)
+        # opens the local html file in the firefox browser
         browser = webdriver.Firefox()
         browser.get(r"file://" + Output + "/test.html")
+        # goes to the path to find the link tag
         link = browser.find_element(By.CSS_SELECTOR, "head>link:nth-child(1)")
+        # asserts if the link tag was found
         self.assertEqual('link', link.tag_name)
+        # quits the browser
         browser.quit()
+        # deletes the output so that it can be fairly tested again
         deleteTest(Output)
 
 
