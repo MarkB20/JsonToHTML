@@ -1,8 +1,10 @@
 import os
 import unittest
 from os import path
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+
 import config
 from deleteTest import deleteTest
 from src.converter import converter
