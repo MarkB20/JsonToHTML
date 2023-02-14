@@ -1,12 +1,8 @@
 import json
 import os
 from json2html import *
-
 from src.beautifulsoup import bs
 
-
-# sets the folder dir holding the json as a var
-# root = os.path.expanduser("~/devops-automation/change_lists") output ~/dev-auto-test
 
 def converter(input, output):
     # goes through each file in the folder

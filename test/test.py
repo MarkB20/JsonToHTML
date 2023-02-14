@@ -1,20 +1,15 @@
-import io
 import os
-from os.path import isdir
-from os import path
 import unittest
-from os.path import exists
+from os import path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from src.beautifulsoup import bs
+import config
+from deleteTest import deleteTest
 from src.converter import converter
 from src.copyStyle import copyStyle
-from deleteTest import deleteTest
-import config
 
 Input = os.path.dirname(__file__) + "/testFile"
 Output = os.path.dirname(__file__) + "/outputTestFile"
-
 cl_path = config.Input
 htmlr_path = config.Output
 stylesheet = os.path.dirname(__file__) + "/outputTestFile/stylesheet.css"
@@ -61,5 +56,3 @@ class TestStringMethods(unittest.TestCase):
         browser.quit()
         # deletes the output so that it can be fairly tested again
         deleteTest(Output)
-
-
