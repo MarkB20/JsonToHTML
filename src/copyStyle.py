@@ -1,5 +1,6 @@
+import os
 import shutil
 
 
 def copyStyle(Output):
-    shutil.copyfile('stylesheet.css', f'{Output}/stylesheet.css')
+    shutil.copyfile(os.path.dirname(__file__) + '/stylesheet.css', f'{Output}/stylesheet.css')
