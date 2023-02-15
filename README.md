@@ -1,3 +1,189 @@
+
+Search
+
+
+
+
+5
+Welcome to Mattermost
+Let's get up and running.
+
+On Boarding videoWatch overview
+🔀 Learn about messaging
+👋 Invite team members to the workspace
+📱 Download the Desktop and Mobile Apps
+📷 Complete your profile
+⛰️ Explore other tools in the platform
+No thanks, I’ll figure it out myself
+
+Find channel
+Insights
+Drafts
+1
+
+CHANNELS
+Copy Link
+OpenNMS Development
+Copy Link
+OpenNMS Discussion
+Copy Link
+Town Square
+
+DIRECT MESSAGES
+
+Copy Link
+2
+pierre, thommasmcq
+Copy Link
+pierre
+Copy Link
+welcomebot
+
+Invite Members
+
+
+3
+
+
+
+Add a channel header
+
+
+
+
+Start call
+
+At 5:06 PM Wednesday, February 15, pierre replied, This is a patch that can be applied with IntelliJ
+
+
+This is the start of your group message history with pierre, thommasmcq.
+Messages and files shared here are not shown to people outside this area.
+
+
+Create a board
+
+Set a Header
+February 07
+
+pierre
+4:58 PM
+Function app name driving the status "rings": getApplianceStats
+
+DeviceEndpointFunctions.kt
+
+Specifically of interest: getApplianceStats in DeviceEndpointFunctionsCommon.kt
+
+OverallApplianceState
+
+Yesterday
+
+mbutler
+Update your status
+2:19 PM
+Hi Pierre we have the converter done you just need to change the input and output file to where you want to convert and send the html. the stylesheet can be changed to be anything if you don't like the design.  https://github.com/MarkB20/JsonToHTML 
+
+GitHub
+GitHub - MarkB20/JsonToHTML
+Contribute to MarkB20/JsonToHTML development by creating an account on GitHub.
+
+GitHub - MarkB20/JsonToHTML
+
+pierre
+3:28 PM
+Cool, will have a look later today, thanks!
+
+Today
+New Messages
+
+pierre
+4:08 PM
+Hey guys, with a couple minor adjustments, I was able to run your script locally.
+
+The resulting HTML pages look like so - is that expected?
+
+
+
+mbutler
+Update your status
+4:19 PM
+that is what it would look like without the stylesheet being copied over into the file so there is a bug there, but roughly yep 
+
+
+pierre
+4:23 PM
+
+I see the CSS got copied over
+
+Didn't see any reference to the CSS from the HTML files
+
+
+mbutler
+Update your status
+4:24 PM
+more like this, strange so the css file got copied over but the link tag didn't?
+
+
+
+pierre
+4:28 PM
+Ah ok.  Yeah, no luck for me with the stylesheet.  Tried with both Chrome and Firefox
+
+
+mbutler
+Update your status
+4:34 PM
+so i take it there is no link tag wrapping the html fils then? me and tom will test a couple of different ways then to see if we can get the same error, also out of curiosity what did you change or was it just the config file. thanks for having a look 
+
+
+mbutler
+Update your status
+4:56 PM
+so we look over what could be wrong and we think it could be the the fact that since the beutifulsoup4 is an external library you may need to install it since it is used to add the link tag to the html. 
+
+also we were think if that is the case, we should add that to the read me or have a script that checks or runs an install for the script. or some other way around it 
+
+
+pierre
+5:05 PM
+Already installed it via pip3
+
+
+pierre
+5:05 PM
+
+Since I don't have permissions to push a branch to your repo, here's a few changes I made:
+
+Small-Suggestions.patch
+PATCH3KB
+Mainly related to the README
+
+
+pierre
+5:06 PM
+
+This is a patch that can be applied with IntelliJ
+
+Login Successful
+Write to pierre, thommasmcq
+
+
+
+
+
+
+
+
+
+
+
+
+No file chosen
+
+
+Small-Suggestions.patch
+PierreShared In ~Pierre, Thommasmcq
+
+Small-Suggestions.patch - Diff
 Subject: [PATCH] README suggestions + small changes to run locally
 ---
 Index: README.md
