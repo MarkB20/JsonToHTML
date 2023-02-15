@@ -1,5 +1,3 @@
-# JsonToHTML
-
 Subject: [PATCH] README suggestions + small changes to run locally
 ---
 Index: README.md
