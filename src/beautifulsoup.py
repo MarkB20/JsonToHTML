@@ -13,4 +13,5 @@ def bs(Output):
 
     # creating the link tag that wraps around the table, so it can be formatted
     soup.table.wrap(soup.new_tag(f"link href= {Path} rel = {stylesheet} type= {textCss} "))
+    soup = soup.prettify()
     return (soup)
