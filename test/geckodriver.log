@@ -8253,3 +8253,385 @@ console.error: (new NetworkError("Network error: TypeError: NetworkError: Networ
 17  XUL                                 0x00000001169fdd34 workerlz4_decompress + 893400
 18  firefox-bin                         0x0000000100c8f034 firefox-bin + 28724
 19  dyld                                0x00000001a3857e50 start + 2544
+1677081565329	geckodriver	INFO	Listening on 127.0.0.1:50372
+1677081565840	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50373" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilem85OJI"
+1   HIToolbox                           0x00000001ad3b45c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x00000001ad3b4188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x00000001ad357310 SetMenuBarObscured + 372
+4   HIToolbox                           0x00000001ad356ee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x00000001ad350fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x00000001ad317cd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x00000001ad35096c AcquireEventFromQueue + 432
+8   HIToolbox                           0x00000001ad33fc84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x00000001ad33fb2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x00000001a6ee584c _DPSNextEvent + 632
+11  AppKit                              0x00000001a6ee49dc -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000114506d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000114508080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001137af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001137b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001133d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x0000000113adc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x0000000113adddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000114b89d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000114b85c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x0000000114b8b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000114f33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x00001effe03c4fd8 0x0 + 34084327542744
+24  ???                                 0x00001effe03d69d4 0x0 + 34084327614932
+25  ???                                 0x00001effe03c47b0 0x0 + 34084327540656
+26  XUL                                 0x0000000114f14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x0000000114b7fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x0000000114b8b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000114c2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000114b89d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000114b85c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x0000000114b8b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x0000000114be5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x0000000113ad741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001137c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001133d00b0 SharedStub + 64
+37  XUL                                 0x00000001188021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000114b32fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001187fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001187fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000102a43034 firefox-bin + 28724
+42  dyld                                0x00000001a3857e50 start + 2544
+1677081566168	Marionette	INFO	Marionette enabled
+1677081566298	Marionette	INFO	Listening on port 50378
+WebDriver BiDi listening on ws://127.0.0.1:50373
+Read port: 50378
+1677081566483	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilem85OJI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50373/devtools/browser/3aa697da-aa48-4fb1-a3d0-18dae1f79389
+1677081567200	Marionette	INFO	Stopped listening on port 50378
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.jsm", 116))
+console.error: (new Error("IndexedDB: main/doh-providers list() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+console.error: (new Error("IndexedDB: main/doh-config getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+console.error: SearchService: "maybeReloadEngines failed" ({})
+1677081573565	geckodriver	INFO	Listening on 127.0.0.1:50396
+1677081573568	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50397" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileQVUxpD"
+1   HIToolbox                           0x00000001ad3b45c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x00000001ad3b4188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x00000001ad357310 SetMenuBarObscured + 372
+4   HIToolbox                           0x00000001ad356ee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x00000001ad350fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x00000001ad317cd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x00000001ad35096c AcquireEventFromQueue + 432
+8   HIToolbox                           0x00000001ad33fc84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x00000001ad33fb2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x00000001a6ee584c _DPSNextEvent + 632
+11  AppKit                              0x00000001a6ee49dc -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000116206d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000116208080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001154af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001154b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001150d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001157dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001157dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000116889d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000116885c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011688b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000116c33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x00002d8e6be10fd8 0x0 + 50089718517720
+24  ???                                 0x00002d8e6be329d4 0x0 + 50089718655444
+25  ???                                 0x00002d8e6be107b0 0x0 + 50089718515632
+26  XUL                                 0x0000000116c14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011687fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011688b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x000000011692750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000116889d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000116885c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011688b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001168e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001157d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001154c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001150d00b0 SharedStub + 64
+37  XUL                                 0x000000011a5021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000116832fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x000000011a4fd950 workerlz4_decompress + 892404
+40  XUL                                 0x000000011a4fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x000000010477f034 firefox-bin + 28724
+42  dyld                                0x00000001a3857e50 start + 2544
+1677081573846	Marionette	INFO	Marionette enabled
+1677081573979	Marionette	INFO	Listening on port 50400
+Read port: 50400
+WebDriver BiDi listening on ws://127.0.0.1:50397
+1677081574043	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileQVUxpD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50397/devtools/browser/e03ec6f1-8fcc-4e02-8496-bd0344595726
+1677081574919	Marionette	INFO	Stopped listening on port 50400
+1677081576982	geckodriver	INFO	Listening on 127.0.0.1:50416
+1677081577489	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50417" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilecD5NDd"
+1   HIToolbox                           0x00000001ad3b45c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x00000001ad3b4188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x00000001ad357310 SetMenuBarObscured + 372
+4   HIToolbox                           0x00000001ad356ee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x00000001ad350fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x00000001ad317cd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x00000001ad35096c AcquireEventFromQueue + 432
+8   HIToolbox                           0x00000001ad33fc84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x00000001ad33fb2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x00000001a6ee584c _DPSNextEvent + 632
+11  AppKit                              0x00000001a6ee49dc -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000114506d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000114508080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001137af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001137b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001133d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x0000000113adc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x0000000113adddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000114b89d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000114b85c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x0000000114b8b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000114f33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x00000db16c854fd8 0x0 + 15055681048536
+24  ???                                 0x00000db16c8769d4 0x0 + 15055681186260
+25  ???                                 0x00000db16c8547b0 0x0 + 15055681046448
+26  XUL                                 0x0000000114f14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x0000000114b7fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x0000000114b8b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000114c2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000114b89d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000114b85c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x0000000114b8b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x0000000114be5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x0000000113ad741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001137c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001133d00b0 SharedStub + 64
+37  XUL                                 0x00000001188021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000114b32fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001187fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001187fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x00000001029cb034 firefox-bin + 28724
+42  dyld                                0x00000001a3857e50 start + 2544
+1677081577772	Marionette	INFO	Marionette enabled
+1677081577904	Marionette	INFO	Listening on port 50422
+Read port: 50422
+WebDriver BiDi listening on ws://127.0.0.1:50417
+1677081577970	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilecD5NDd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50417/devtools/browser/83305520-7cc8-4a58-8868-3536e97ef600
+1677081578782	Marionette	INFO	Stopped listening on port 50422
+1677081586906	geckodriver	INFO	Listening on 127.0.0.1:50438
+1677081586910	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50439" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilePgIjwF"
+1   HIToolbox                           0x00000001ad3b45c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x00000001ad3b4188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x00000001ad357310 SetMenuBarObscured + 372
+4   HIToolbox                           0x00000001ad356ee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x00000001ad350fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x00000001ad317cd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x00000001ad35096c AcquireEventFromQueue + 432
+8   HIToolbox                           0x00000001ad33fc84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x00000001ad33fb2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x00000001a6ee584c _DPSNextEvent + 632
+11  AppKit                              0x00000001a6ee49dc -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000112406d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000112408080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001116af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001116b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001112d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001119dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001119dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000112a89d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000112a85c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x0000000112a8b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000112e33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x0000230bd2614fd8 0x0 + 38533681205208
+24  ???                                 0x0000230bd26369d4 0x0 + 38533681342932
+25  ???                                 0x0000230bd26147b0 0x0 + 38533681203120
+26  XUL                                 0x0000000112e14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x0000000112a7fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x0000000112a8b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000112b2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000112a89d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000112a85c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x0000000112a8b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x0000000112ae5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001119d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001116c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001112d00b0 SharedStub + 64
+37  XUL                                 0x00000001167021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000112a32fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x00000001166fd950 workerlz4_decompress + 892404
+40  XUL                                 0x00000001166fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x0000000100947034 firefox-bin + 28724
+42  dyld                                0x00000001a3857e50 start + 2544
+1677081587176	Marionette	INFO	Marionette enabled
+1677081587306	Marionette	INFO	Listening on port 50442
+Read port: 50442
+WebDriver BiDi listening on ws://127.0.0.1:50439
+1677081587370	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofilePgIjwF/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50439/devtools/browser/9eac890e-3218-40a4-b81c-27ee707fb7fa
+1677081588216	Marionette	INFO	Stopped listening on port 50442
+1677081590263	geckodriver	INFO	Listening on 127.0.0.1:50458
+1677081590770	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50459" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileSAmuhn"
+1   HIToolbox                           0x00000001ad3b45c8 _ZN15MenuBarInstance22EnsureAutoShowObserverEv + 120
+2   HIToolbox                           0x00000001ad3b4188 _ZN15MenuBarInstance14EnableAutoShowEv + 60
+3   HIToolbox                           0x00000001ad357310 SetMenuBarObscured + 372
+4   HIToolbox                           0x00000001ad356ee8 _ZN13HIApplication15HandleActivatedEP14OpaqueEventRefhP15OpaqueWindowPtrh + 172
+5   HIToolbox                           0x00000001ad350fcc _ZN13HIApplication13EventObserverEjP14OpaqueEventRefPv + 296
+6   HIToolbox                           0x00000001ad317cd0 _NotifyEventLoopObservers + 176
+7   HIToolbox                           0x00000001ad35096c AcquireEventFromQueue + 432
+8   HIToolbox                           0x00000001ad33fc84 ReceiveNextEventCommon + 320
+9   HIToolbox                           0x00000001ad33fb2c _BlockUntilNextEventMatchingListInModeWithFilter + 72
+10  AppKit                              0x00000001a6ee584c _DPSNextEvent + 632
+11  AppKit                              0x00000001a6ee49dc -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 728
+12  XUL                                 0x0000000116306d74 _ZN14nsXPTCStubBase7Stub249Ev + 13894428
+13  XUL                                 0x0000000116308080 _ZN14nsXPTCStubBase7Stub249Ev + 13899304
+14  XUL                                 0x00000001155af82c NS_NewLocalFileWithFSRef + 278976
+15  XUL                                 0x00000001155b4fdc NS_NewLocalFileWithFSRef + 301424
+16  XUL                                 0x00000001151d0060 _NS_InvokeByIndex + 96
+17  XUL                                 0x00000001158dc448 _ZN14nsXPTCStubBase7Stub249Ev + 3234288
+18  XUL                                 0x00000001158dddb4 _ZN14nsXPTCStubBase7Stub249Ev + 3240796
+19  XUL                                 0x0000000116989d80 XRE_GetBootstrap + 350268
+20  XUL                                 0x0000000116985c28 XRE_GetBootstrap + 333540
+21  XUL                                 0x000000011698b540 XRE_GetBootstrap + 356348
+22  XUL                                 0x0000000116d33b84 XRE_GetBootstrap + 4191808
+23  ???                                 0x0000263a85d04fd8 0x0 + 42032794980312
+24  ???                                 0x0000263a85d169d4 0x0 + 42032795052500
+25  ???                                 0x0000263a85d047b0 0x0 + 42032794978224
+26  XUL                                 0x0000000116d14f04 XRE_GetBootstrap + 4065728
+27  XUL                                 0x000000011697fab4 XRE_GetBootstrap + 308592
+28  XUL                                 0x000000011698b540 XRE_GetBootstrap + 356348
+29  XUL                                 0x0000000116a2750c XRE_GetBootstrap + 995272
+30  XUL                                 0x0000000116989d80 XRE_GetBootstrap + 350268
+31  XUL                                 0x0000000116985c28 XRE_GetBootstrap + 333540
+32  XUL                                 0x000000011698b540 XRE_GetBootstrap + 356348
+33  XUL                                 0x00000001169e5dac XRE_GetBootstrap + 727144
+34  XUL                                 0x00000001158d741c _ZN14nsXPTCStubBase7Stub249Ev + 3213764
+35  XUL                                 0x00000001155c6c9c _ZN14nsXPTCStubBase7Stub249Ev + 580
+36  XUL                                 0x00000001151d00b0 SharedStub + 64
+37  XUL                                 0x000000011a6021e8 workerlz4_decompress + 910988
+38  XUL                                 0x0000000116932fe4 workerlz4_maxCompressedSize + 524552
+39  XUL                                 0x000000011a5fd950 workerlz4_decompress + 892404
+40  XUL                                 0x000000011a5fdd34 workerlz4_decompress + 893400
+41  firefox-bin                         0x000000010481f034 firefox-bin + 28724
+42  dyld                                0x00000001a3857e50 start + 2544
+1677081591038	Marionette	INFO	Marionette enabled
+1677081591170	Marionette	INFO	Listening on port 50464
+Read port: 50464
+WebDriver BiDi listening on ws://127.0.0.1:50459
+1677081591235	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/gx/z3vv5lkx3wn2c3zw0k8854yc0000gp/T/rust_mozprofileSAmuhn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50459/devtools/browser/fc773863-fa8f-4c16-9274-7d0aba611ef6
+1677081592011	Marionette	INFO	Stopped listening on port 50464

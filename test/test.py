@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 
 import config
 from deleteTest import deleteTest
+from src.JsonFormatter import JsonFormatter
 from src.converter import converter
 from src.copyStyle import copyStyle
 
@@ -45,7 +46,6 @@ class TestStringMethods(unittest.TestCase):
         deleteTest(Output)
 
     def test_soup(self):
-
         # run the converter with a test file and test output file
         converter(Input, Output)
         # opens the local html file in the firefox browser
