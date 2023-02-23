@@ -6,7 +6,7 @@ from src.copyStyle import copyStyle
 from test.deleteTest import deleteTest
 from src.JsonFormatter import JsonFormatter
 
-# TODO! json formatter so tgat everything is the same
+# TODO! fix header unsticking bug
 JsonFormatter(config.Input)
 inputJson = "outputJSONFile"
 # coveting the json files to html files from and to the config designated outputs
