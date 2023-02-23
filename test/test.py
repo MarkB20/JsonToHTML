@@ -7,7 +7,6 @@ from selenium.webdriver.common.by import By
 
 import config
 from deleteTest import deleteTest
-from src.JsonFormatter import JsonFormatter
 from src.converter import converter
 from src.copyStyle import copyStyle
 

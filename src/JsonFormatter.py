@@ -13,24 +13,27 @@ def JsonFormatter(input):
             with open(jsonFilePath) as f:
                 loader = json.load(f)
 
-            for row0 in loader:
-
+            # goes through each table
+            for table in loader:
+                # use for storing each row into a new table to be inserted
                 sub = []
-                for temp0 in loader[row0]:
+                for row in loader[table]:
 
-                    json_object = json.dumps(temp0, indent=4)
-                    temp0 = json.loads(json_object)
-                    if "pr" not in temp0:
+                    json_object = json.dumps(row, indent=4)
+                    row = json.loads(json_object)
+                    # checks if the row has a pr attached to it
+                    if "pr" not in row:
                         y = {"pr": "N/A"}
-                        temp0.update(y)
-
-                        sub.append(temp0)
+                        row.update(y)
+                        # appends the table so that it has a row
+                        sub.append(row)
                     else:
-
-                        sub.append(temp0)
-
-                loader[row0] = sub
+                        # adds the row that already has a pr
+                        sub.append(row)
+                # replaces the old table with the new table
+                loader[table] = sub
 
             loader = json.dumps(loader, indent=4)
+            # outputs the table
             output = open(f"outputJSONFile/{file}", 'w')
             output.write(loader)

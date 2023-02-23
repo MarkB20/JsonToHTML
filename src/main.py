@@ -2,9 +2,9 @@ import os
 
 import config
 from converter import converter
+from src.JsonFormatter import JsonFormatter
 from src.copyStyle import copyStyle
 from test.deleteTest import deleteTest
-from src.JsonFormatter import JsonFormatter
 
 # TODO! fix header unsticking bug for portal
 JsonFormatter(config.Input)
