@@ -6,7 +6,7 @@ from src.copyStyle import copyStyle
 from test.deleteTest import deleteTest
 from src.JsonFormatter import JsonFormatter
 
-# TODO! fix header unsticking bug
+# TODO! fix header unsticking bug for portal
 JsonFormatter(config.Input)
 inputJson = "outputJSONFile"
 # coveting the json files to html files from and to the config designated outputs
