@@ -7,6 +7,7 @@ body {
   }
   
   table {
+    background-color: #14dae9;
     text-align: left;
     position: relative;
     border-collapse: collapse; 
@@ -15,8 +16,8 @@ body {
    
   
    th {
-    
-    background: white;
+    background-color: #0081AD;
+    color: aliceblue;
     position: sticky;
     position: -webkit-sticky;/* required */
     top: 0; /* Don't forget this, required for the stickiness */
@@ -25,7 +26,8 @@ body {
   }
 
   tr, th {
-    text-align:left;
+   
     vertical-align: text-top;
   }
   
+
