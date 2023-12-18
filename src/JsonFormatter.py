@@ -6,12 +6,18 @@ import config
 
 def JsonFormatter(input):
     for file in os.listdir(input):
-        jsonFilePath = os.path.expanduser(f"{input}/{file}")
-        # if the file is not a json file or is not empty
-        if not file.startswith('.') and os.path.isfile(os.path.join(input, file)) and os.stat(
-                jsonFilePath).st_size != 0:
-            with open(jsonFilePath) as f:
+        jsonFilePath = os.path.join(input, file)
+
+        # Skip non-JSON files and the config file
+        if not file.endswith('.json') or file == 'config.py':
+            continue
+
+        with open(jsonFilePath) as f:
+            try:
                 loader = json.load(f)
+            except json.JSONDecodeError as e:
+                print(f"Error loading JSON from {jsonFilePath}: {e}")
+                continue  # Skip to the next file if loading fails
 
             # goes through each table
             for table in loader:
