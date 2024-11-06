@@ -1,33 +1,38 @@
-
-
 body {
     min-height: 100%;
     margin: 0;
     padding: 2rem;
-  }
-  
-  table {
+}
+
+table {
     background-color: #14dae9;
     text-align: left;
     position: relative;
-    border-collapse: collapse; 
-  }
-  
-   
-  
-   th {
+    border-collapse: collapse;
+    width: 100%; /* Set table width to 100% */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+th, td {
+    padding: 10px; /* Add padding to th and td for better spacing */
+}
+
+th {
     background-color: #0081AD;
     color: aliceblue;
     position: sticky;
-    position: -webkit-sticky;/* required */
-    top: 0; /* Don't forget this, required for the stickiness */
+    position: -webkit-sticky; /* Required for sticky positioning in older browsers */
+    top: 0;
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
-   
-  }
+}
 
-  tr, th {
-   
-    vertical-align: text-top;
-  }
-  
+tr, th {
+    vertical-align: top; /* Change to 'top' for better alignment */
+}
 
+.large-text-cell {
+    padding: 20px; /* Increase padding for cells with a large amount of text */
+    /* Add any other styles as needed */
+    max-width: 500px; /* Set a maximum width to prevent excessive stretching */
+    word-wrap: break-word; /* Allow long words to break and wrap onto the next line */
+}

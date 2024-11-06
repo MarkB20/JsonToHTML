@@ -1,45 +1,34 @@
 import json
 import os
+import textwrap  # Add this line to import the textwrap module
 
-import config
+def JsonFormatter(input_path):
+    for file in os.listdir(input_path):
+        json_file_path = os.path.join(input_path, file)
 
-
-def JsonFormatter(input):
-    for file in os.listdir(input):
-        jsonFilePath = os.path.join(input, file)
-
-        # Skip non-JSON files and the config file
-        if not file.endswith('.json') or file == 'config.py':
+        # Skip non-JSON files
+        if not file.endswith('.json'):
             continue
 
-        with open(jsonFilePath) as f:
+        with open(json_file_path) as f:
             try:
                 loader = json.load(f)
             except json.JSONDecodeError as e:
-                print(f"Error loading JSON from {jsonFilePath}: {e}")
+                print(f"Error loading JSON from {json_file_path}: {e}")
                 continue  # Skip to the next file if loading fails
 
-            # goes through each table
-            for table in loader:
-                # use for storing each row into a new table to be inserted
-                sub = []
-                for row in loader[table]:
+        # Process the JSON data
+        for meal in loader.get("meals", []):
+            # Ensure 'strinstructions' is present and not empty
+            if "strinstructions" in meal and meal["strinstructions"]:
+                # Assuming a fixed table width of 80 characters
+                formatted_instructions = textwrap.fill(
+                    meal["strinstructions"], width=80, initial_indent="    ", subsequent_indent="    "
+                )
+                meal["strinstructions"] = formatted_instructions
 
-                    json_object = json.dumps(row, indent=4)
-                    row = json.loads(json_object)
-                    # checks if the row has a pr attached to it
-                    if "pr" not in row:
-                        y = {"pr": "N/A"}
-                        row.update(y)
-                        # appends the table so that it has a row
-                        sub.append(row)
-                    else:
-                        # adds the row that already has a pr
-                        sub.append(row)
-                # replaces the old table with the new table
-                loader[table] = sub
-
-            loader = json.dumps(loader, indent=4)
-            # outputs the table
-            output = open(f"outputJSONFile/{file}", 'w')
-            output.write(loader)
+        # Save the modified JSON back to the output directory
+        output_directory = "outputJSONFile"
+        output_file_path = os.path.join(output_directory, file)
+        with open(output_file_path, 'w') as output:
+            json.dump(loader, output, indent=4)
